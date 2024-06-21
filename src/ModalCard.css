@@ -1,0 +1,23 @@
+.card-modal-submit button{
+    font-size: 25px;
+    background-color: #76323F;
+    color: white;
+}
+
+.card-modal-submit{
+    text-align: right;
+}
+
+.gif-search {
+    font-size: 20px;
+    background-color: #76323F;
+    color: white;
+}
+
+.gif-results img {
+    width: 130px;
+}
+
+input {
+    font-size: 20px;
+}

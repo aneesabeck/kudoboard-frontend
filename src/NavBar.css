@@ -1,0 +1,10 @@
+nav button {
+    margin-right: 20px;
+}
+
+nav button:hover {
+    box-shadow: 0 6px 60px #76323F;
+}
+nav {
+    margin-bottom: 30px;
+}

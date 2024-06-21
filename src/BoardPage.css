@@ -1,0 +1,18 @@
+.card-page-btns button {
+    margin-right: 20px;
+}
+
+.card-page-btns button:hover {
+    box-shadow: 0 6px 60px #76323F;
+}
+.card-page-btns {
+    margin-bottom: 30px;
+}
+
+.all-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+}

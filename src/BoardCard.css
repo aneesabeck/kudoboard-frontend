@@ -1,0 +1,32 @@
+.board-buttons {
+    font-size: 15px;
+    /* border: 2px solid red; */
+    /* justify-content: space-between; */
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    padding-left: 22px;
+}
+
+/* .view {
+
+} */
+
+.board-card {
+    border: 2px #565656 solid;
+    padding-bottom: 20px;
+    background-color: #C09F80;
+    border-radius: 8px;
+}
+
+.board-card h3 {
+    margin: 0px;
+}
+
+.board-card h4 {
+    margin: 5px;
+}
+
+.board-card img{
+    border-radius: 8px;
+}
