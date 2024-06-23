@@ -1,0 +1,30 @@
+.comment-modal-submit button{
+    font-size: 25px;
+    background-color: #76323F;
+    color: white;
+}
+
+.comment-modal-submit{
+    text-align: right;
+}
+
+.comment-modal-content {
+    margin-left: 20px;
+}
+
+.comment-modal-content {
+    text-align: left;
+}
+
+.comment-modal-content h1 {
+    text-align: center;
+}
+
+.comment-modal-content h4 {
+    font-size: 20px;
+}
+
+
+input {
+    font-size: 20px;
+}
