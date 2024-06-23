@@ -7,7 +7,6 @@ function NavBar({ setBoards, fetchBoards }) {
     }
 
     const handleFilter = (event) => {
-        // event.preventDefault()
         fetch(`${import.meta.env.VITE_BACKEND_ADDRESS}/boards/search?category=${event.target.value}`, {
             method: 'GET',
             headers: {

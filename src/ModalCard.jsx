@@ -94,7 +94,6 @@ const ModalCard = ({ closeModal, fetchCards, boardId }) => {
                             <div className='gif-results'>
                                 {gifs.map((gif) => (
                                     <img 
-                                    // key={gif.id}
                                     src={gif.images.fixed_height.url}
                                     onClick={() => handleSelectGif(gif.images.fixed_height.url)}
                                     style={{ cursor: 'pointer', margin: '10px'}}

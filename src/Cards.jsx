@@ -1,9 +1,11 @@
 import { useEffect, useState } from 'react'
 import { useParams, useNavigate } from 'react-router-dom'
 import './Cards.css'
+import ModalComment from './ModalComment'
 
 function Cards({boardId, cardId, title, gifUrl, description, upvotes, setCards, setCurrentBoard}) {
     const [currentUpvotes, setCurrentUpvotes] = useState(upvotes)
+    const [isOpen, setIsOpen] = useState(false)
 
     useEffect(() => {
         fetchBoardPage()
@@ -89,7 +91,14 @@ function Cards({boardId, cardId, title, gifUrl, description, upvotes, setCards, 
     }
 
 
-    // if (!currentBoard) return <div>Loading...</div>
+    function closeModal () {
+      setIsOpen(false)
+    }
+  
+    function openModal(cardId) {
+        setIsOpen(true)
+    }
+
     return (
         <div>
             <div className='card'>
@@ -98,6 +107,8 @@ function Cards({boardId, cardId, title, gifUrl, description, upvotes, setCards, 
                 <p>{description}</p>
                 <button onClick={()=> handleUpvoteCard(cardId)}>Upvote: {currentUpvotes}</button>
                 <button onClick={() => handleDeleteCard(cardId)}>Delete</button>
+                <button onClick={() => openModal(cardId)}>Comments</button>
+                {isOpen && <ModalComment closeModal={closeModal} fetchCards={fetchCards} cardId={cardId}/>}   
             </div>
         </div>
     )

@@ -6,6 +6,7 @@ import SearchForm from './SearchForm'
 import ModalBoard from './ModalBoard'
 import NavBar from './NavBar'
 import BoardPage from './BoardPage'
+import Footer from './Footer'
 
 function App() {
   const [boards, setBoards] = useState([])
@@ -63,6 +64,7 @@ function App() {
         <Route path="/boards/:id" element={<BoardPage />} />
 
       </Routes>
+      <Footer/>
       {isOpen && <ModalBoard closeModal={closeModal} fetchBoards={fetchBoards} />}
     </> 
   )
